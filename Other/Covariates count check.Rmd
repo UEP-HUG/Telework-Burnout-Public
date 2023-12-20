@@ -1,0 +1,42 @@
+---
+title: "missing check"
+author: "Anshu Uppal"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+pacman::p_load(
+  tidyverse,
+  here,
+  flextable
+  )
+dat <- tibble(readRDS(here("data", "Generated datasets", "clean_dataset.rds")))
+source(here("code", "Regression_covariates.R"))
+
+# Functions
+myflextable = function(data, ...) {
+  set_flextable_defaults(na_str = "NA", theme_fun = theme_booktabs, font.size = 12, padding.bottom = 1, padding.top = 1)
+  x = flextable(data, ...)
+  x = colformat_int(x, big.mark = "")
+  x = colformat_double(x, big.mark = "", digits = 2, na_str = "NA")
+  return(x)
+}
+```
+
+## Summary Tables of covariates
+```{r}
+dat %>% count(age_cat) %>% myflextable() %>% autofit()
+dat %>% count(sex_en) %>% myflextable() %>% autofit()
+dat %>% count(education_rec_en) %>% myflextable() %>% autofit()
+dat %>% count(hh_livewith_rec_en) %>% myflextable() %>% autofit()
+dat %>% count(num_young_children_dich) %>% myflextable() %>% autofit()
+dat %>% count(overcrowded) %>% myflextable() %>% autofit()
+dat %>% count(noisy) %>% myflextable() %>% autofit()
+dat %>% count(quiet_room) %>% myflextable() %>% autofit()
+dat %>% count(health_general_dich) %>% myflextable() %>% autofit()
+dat %>% count(Occupation_label_2) %>% myflextable() %>% autofit()
+dat %>% count(pandemic_related_work_change) %>% myflextable() %>% autofit()
+dat %>% count(percent_change_cat_r) %>% myflextable() %>% autofit()
+```

@@ -1,0 +1,80 @@
+dag {
+"Age, Sex, Education" [adjusted,pos="-0.584,-0.605"]
+"Cares for children" [adjusted,pos="-0.523,-0.982"]
+"Changes to telework frequency" [exposure,pos="-1.090,0.633"]
+"Commute frequency / type" [pos="-0.826,1.131"]
+"Emotional exhaustion" [outcome,pos="-0.144,0.643"]
+"Financial security" [pos="-0.289,-0.158"]
+"Flexibility for chores / errands / childcare" [pos="-0.827,0.472"]
+"Frequency of in-person interactions" [pos="-0.995,0.075"]
+"Health condition" [adjusted,pos="-0.589,-1.135"]
+"Interpersonal conflict" [pos="-0.836,-0.175"]
+"Job sector / Occupation" [adjusted,pos="-0.972,-0.321"]
+"Job security" [pos="-0.184,0.054"]
+"Living environment" [adjusted,pos="-0.959,0.315"]
+"Overtime work" [pos="-0.447,0.633"]
+"Pandemic-related or other work changes" [adjusted,pos="-0.688,-0.790"]
+"Personality factors" [latent,pos="-0.532,-1.285"]
+"Physical activity" [pos="-0.427,1.229"]
+"Relationship with colleagues / manager" [pos="-0.479,-0.062"]
+"Social isolation" [pos="-0.654,0.195"]
+"Work-life balance" [pos="-0.503,0.421"]
+Autonomy [pos="-0.652,0.801"]
+Income [pos="-0.551,-0.360"]
+"Age, Sex, Education" -> "Changes to telework frequency" [pos="-1.221,-0.844"]
+"Age, Sex, Education" -> "Emotional exhaustion" [pos="-0.070,-0.840"]
+"Age, Sex, Education" -> "Financial security"
+"Age, Sex, Education" -> "Job sector / Occupation"
+"Age, Sex, Education" -> Income
+"Cares for children" -> "Changes to telework frequency" [pos="-1.317,-1.114"]
+"Cares for children" -> "Emotional exhaustion" [pos="-0.026,-1.283"]
+"Cares for children" -> "Financial security" [pos="-0.421,-0.878"]
+"Changes to telework frequency" -> "Commute frequency / type" [pos="-1.034,1.000"]
+"Changes to telework frequency" -> "Emotional exhaustion" [pos="-0.622,1.250"]
+"Changes to telework frequency" -> "Flexibility for chores / errands / childcare"
+"Changes to telework frequency" -> "Frequency of in-person interactions"
+"Changes to telework frequency" -> "Overtime work"
+"Changes to telework frequency" -> Autonomy
+"Commute frequency / type" -> "Emotional exhaustion" [pos="-0.222,1.087"]
+"Commute frequency / type" -> "Physical activity" [pos="-0.619,1.289"]
+"Financial security" -> "Emotional exhaustion"
+"Financial security" -> "Job security"
+"Flexibility for chores / errands / childcare" -> "Work-life balance" [pos="-0.647,0.506"]
+"Frequency of in-person interactions" -> "Interpersonal conflict"
+"Frequency of in-person interactions" -> "Relationship with colleagues / manager" [pos="-0.800,0.142"]
+"Frequency of in-person interactions" -> "Social isolation"
+"Health condition" -> "Changes to telework frequency" [pos="-1.298,-1.245"]
+"Health condition" -> "Emotional exhaustion" [pos="-0.055,-1.324"]
+"Interpersonal conflict" -> "Emotional exhaustion" [pos="-0.438,0.121"]
+"Job sector / Occupation" -> "Changes to telework frequency" [pos="-1.134,-0.123"]
+"Job sector / Occupation" -> "Frequency of in-person interactions"
+"Job sector / Occupation" -> "Pandemic-related or other work changes"
+"Job sector / Occupation" -> Income
+"Job security" -> "Emotional exhaustion"
+"Job security" -> "Overtime work" [pos="-0.304,0.498"]
+"Living environment" -> "Changes to telework frequency"
+"Living environment" -> "Work-life balance" [pos="-0.756,0.361"]
+"Overtime work" -> "Emotional exhaustion"
+"Overtime work" -> "Work-life balance"
+"Pandemic-related or other work changes" -> "Changes to telework frequency" [pos="-1.242,-0.884"]
+"Pandemic-related or other work changes" -> "Emotional exhaustion" [pos="-0.044,-1.022"]
+"Pandemic-related or other work changes" -> "Job security" [pos="-0.239,-0.602"]
+"Pandemic-related or other work changes" -> Autonomy [pos="-0.753,0.043"]
+"Personality factors" -> "Changes to telework frequency" [pos="-1.325,-1.192"]
+"Personality factors" -> "Emotional exhaustion" [pos="-0.069,-1.401"]
+"Personality factors" -> "Job security" [pos="-0.211,-0.909"]
+"Personality factors" -> "Overtime work" [pos="-0.263,-0.261"]
+"Personality factors" -> "Relationship with colleagues / manager" [pos="-0.283,-0.808"]
+"Personality factors" -> "Social isolation" [pos="-0.763,-1.200"]
+"Physical activity" -> "Emotional exhaustion" [pos="-0.184,1.138"]
+"Relationship with colleagues / manager" -> "Emotional exhaustion" [pos="-0.297,0.061"]
+"Relationship with colleagues / manager" -> "Interpersonal conflict" [pos="-0.678,-0.296"]
+"Relationship with colleagues / manager" -> "Job security"
+"Relationship with colleagues / manager" -> "Social isolation"
+"Relationship with colleagues / manager" -> Autonomy [pos="-0.577,0.216"]
+"Social isolation" -> "Emotional exhaustion" [pos="-0.372,0.364"]
+"Work-life balance" -> "Emotional exhaustion"
+Autonomy -> "Emotional exhaustion"
+Income -> "Financial security"
+Income -> "Living environment"
+}
