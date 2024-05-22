@@ -4,47 +4,6 @@ pacman::p_load(
 # Enter the variable for your exposure
 exposure <- "wfh_exposure"
 
-# # Original ####
-# # Enter the variables for your covariates
-# covariates <- c(
-#   "age_cat",
-#   "sex_en",
-#   "education_rec_en",
-#   "hh_livewith_rec_en",
-#   "num_young_children_dich",
-#   "overcrowded",
-#   "noisy",
-#   "quiet_room",
-#   "health_general_dich",
-#   "hh_income_cat_en",
-#   "finance_situation",
-#   "percent_change_cat",
-#   "supervision_short"
-# )
-# 
-# # Enter a "clean" name for your exposure and covariates
-# # (covariates need to be in the same order!)
-# clean_name <- c(
-#   "Teleworking group"       #Exposure
-#   , "Age group, years"    # Rest of covariates
-#   , "Sex"
-#   , "Education"
-
-#   , "Living arrangement"
-#   , "Young children"
-#   , "Household density"
-#   , "Noise level at home"
-#   , "Access to a quiet room"
-
-#   , "Self-reported general health"
-
-#   , "Household income" # removed in new DAG
-#   , "Financial security" # removed in new DAG
-#   , "Change in contracted hours"
-#   , "Management role" # removed in new DAG
-# )
-
-# New ####
 # Enter the variables for your covariates
 covariates <- c(
   "age_cat"
