@@ -8,7 +8,7 @@ pacman::p_load(
 
 source(here::here("code", "representative_code.R"))
 # Specify exposure and covariates
-source(here("code", "Regression_covariates.R"))
+source(here::here("code", "Regression_covariates.R"))
 
 # Function ####
 
