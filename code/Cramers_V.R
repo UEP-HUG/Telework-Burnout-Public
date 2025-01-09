@@ -13,9 +13,9 @@ pacman::p_load(    # Installs / loads packages if they are not already installed
 dat <- readRDS(here("data", "Generated datasets", "clean_dataset.rds"))
 # Read in the covariates
 source(here("code", "Regression_covariates.R"))
-covariates = covariates[ !covariates == 'Occupation_label_2']
+covariates = covariates[,1][ !covariates[,1] == 'Occupation_label_2']
 clean_labels <- clean_labels %>% 
-  filter(!variable %in% c(
+  filter(!name %in% c(
     "Occupation_label_2", # it breaks when I add this in, might be an issue with number of observations in each level? I took it out and added in Occupation_label_1 in its place (ISCO-08 level 1)
     "wfh_exposure"))
 
@@ -71,10 +71,10 @@ outcomes_family <- c("gaussian", "binomial", "binomial")
 
 source(here("code", "Regression_covariates.R"))
 
-r_model <- c("wfh_exposure", covariates) %>%
+r_model <- c("wfh_exposure", covariates$name) %>%
   str_c(collapse = "+") %>% # combine variables separated by a plus
   ## combine the variables with outcome in formula style
-  str_c(outcomes[1]," ~ ", .) %>%
-  glm(family = outcomes_family[1], data = dat)
+  str_c(outcomes$name[1]," ~ ", .) %>%
+  glm(family = outcomes$outcomes_type[1], data = dat)
 
 car::vif(r_model) ## Interpret GVIF^(1/(2*Df)) as this takes into account the degrees of freedom
