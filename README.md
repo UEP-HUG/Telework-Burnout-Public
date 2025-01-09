@@ -9,4 +9,4 @@ Data in this study is protected by the ethics committee authorization of the res
 ## Repository structure  
 The R code to run the analysis steps are located in the "code" folder. **First run the three 01_prep files in sequence (a,b,c) to generate the datasets used for nearly all downstream analyses (these are placed into data/Generated datasets/)**  
 
-**You should also install the pacman package (package management tool) for automatic installing / loading of all packages used in these analyses.**
+You should also **install the `pacman` package** (package management tool) for automatic installing / loading of all packages used in these analyses.
