@@ -1,7 +1,10 @@
 # Covid-19 pandemic-related changes in teleworking, emotional exhaustion, and occupational burnout: a cross-sectional analysis of a cohort study
 
 This repository contains code for the analysis of the SeroCoV-Schools study presented in the manuscript:
-Anshu Uppal, MSc; Nick Pullen, PhD; Hélène Baysson, PhD; Stephanie Schrempft, PhD, Aminata Rosalie Bouhet, MA; María-Eugenia Zaballa, PhD, Julien Lamour, MSc; Mayssam Nehme, MD; Idris Guessous, PhD; Silvia Stringhini, PhD; Elsa Lorthe, PhD; Specchio-COVID19 study group
+*Covid-19 pandemic-related changes in teleworking, emotional exhaustion, and occupational burnout: a cross-sectional analysis of a cohort study*
+Anshu Uppal; Nick Pullen; Hélène Baysson; Stephanie Schrempft, Aminata Rosalie Bouhet; María-Eugenia Zaballa; Julien Lamour; Mayssam Nehme; Idris Guessous; Silvia Stringhini; Elsa Lorthe; Specchio-COVID19 study group
+*BMC Public Health* 25:282 (2025)
+https://doi.org/10.1186/s12889-024-21142-z
 
 ## Data protection  
 Data in this study is protected by the ethics committee authorization of the research project, and is available upon request to the corresponding author.
